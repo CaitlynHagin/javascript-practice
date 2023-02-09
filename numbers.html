@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1><p id="calc"> Number 1 x Number 2 / Number 3</p></h1>
+    <label for = "num1"> Number 1</label>
+    <input id= "num1"  type = "number"><br>
+    <label for="num2">Number 2</label>
+    <input id="num2" type ="number"> <br>
+    <label for = "num3"> Number 3</label>
+    <input id= "num3" type="number"> <br>
+    <button onclick="doSum()">Submit</button>
+    <button onclick="reload()">Clear</button>
+    <h2 id="heading">Your result is :</h2>
+    <p id="result"></p> <br>
+<script>
+function doSum () {
+let num1 = document.getElementById("num1").value
+let num2= document.getElementById("num2").value
+let num3= document.getElementById("num3").value
+let sum = ( num1 * num2 / num3 )
+   document.getElementById("heading").innerHTML = "Your result is :"
+    document.getElementById("result").innerHTML = sum
+};
+function reload(){
+        window.location.reload()
+    }
+</script>
+</body>
+</html>

@@ -8,7 +8,44 @@
 </head>
 <body>
     <form>
-        <input type="button" value="Pinch me" onClick="alert('OUCH!!!!')"/>
+        <input type="button" 
+        value="Pinch me"
+         onClick="alert('OUCH!!!!')"
+         />
     </form>
+
+    <script>
+         document.write("Hello, world");
+         // document/object - gave it an object, write/function - what to do/output, "hello world" saying what I want it to display
+         
+
+         
+        // what does this do. 
+        
+        function doSomething() {
+            alert ('hello')
+        }
+
+        function addTwoNumbers(x,y){
+            return x + y;
+        }
+
+        document.querySelector("demo").innerHTML = addTwoNumbers(2,4); // here I call the function 
+
+        // add two numbers (1,1);
+
+        document.getElementById("nameofid");
+        document.getElementsByClassName("nameofclass")[0] // just returns the first one 
+
+        // querySelector and querySelectorAll, you have to put the css selector eg . class # for id
+   document.querySelector(".nameofclass"); // just returns one 
+   document.querySelectorAll (".nameofclass"); just returns one
+
+   /*
+        
+   
+   
+               
+    </script>
 </body>
 </html>
