@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Functions</h1>
+<h3 id="name">Name goes here</h3>
+
+
+<div>
+    <label for="firstName">First name</label>
+    <input type="text" name="firstName" id="firstName">
+    
+    <label for="secondName">Second name</label>
+    <input type="text" name="secondName" id="secondName">
+
+</div>
+
+    <button id="submit-button" onclick="register(event)">Submit</button>
+
+<script>
+function register(event) {
+    event.preventDefault();
+    const fullName = firstName.value + '' + secondName.value;
+    document.getElementById("fullName").innerHTML = fullName;
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+    <!-- previous example 
+    <script> 
+    function writeName() {
+        document.getElementById("name").innerHTML = "My name"; 
+        document.getElementbyId(name.style.border) = "1px solid black"
+
+    }
+    writeName
+    
+    
+    </script>
+</body>
+</html>
